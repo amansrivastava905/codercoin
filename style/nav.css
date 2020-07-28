@@ -88,13 +88,16 @@ nav .navbar .burger-menu .burger:hover {
     min-width: 70%;
   }
   nav .navbar .nav .nav-social {
-    text-align: left;
+    text-align: center;
     display: block;
     padding: 50px 0px;
   }
   nav .navbar .nav .nav-social a {
     text-decoration: none;
     padding: 5px;
+    color: #eb530d;
+  }
+  nav .navbar .nav .nav-social a:hover {
     color: rgba(0, 0, 0, 0.7);
   }
   nav .navbar .nav ul {
