@@ -14,9 +14,11 @@ function navigation()
     }
     const nav=document.querySelector(".nav");
     if(nav.style.left=="0vw"){
-    	nav.style.left="-100vw";
+        nav.style.left="-100vw";
+        document.getElementById('coverAll').style.display = 'none';
     }
     else{
+        document.getElementById('coverAll').style.display = 'block';
     	nav.style.left="0vw";
     }
 }
