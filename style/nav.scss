@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+// variables(always list them here)
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+
+
+
+$content-color-l:rgba(0,0,0,0.7);
+$content-color-l-xl:rgba(0,0,0,0.5);
+$heading-color-l:rgb(235, 83, 13);
+$background-l:rgba(255,255,255,0.95);
+$background-l-contrast:rgba(0,0,0,0.05);
+
+
+$font-size-1:36px;
+$font-size-2:28px;
+$font-size-3:24px;
+$font-size-4:20px;
+$font-size-5:18px;
+$font-size-6:16px;
+$font-size-7:12px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    
+    .navbar{
+        -webkit-box-shadow: 0px 7px 17px -12px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 7px 17px -12px rgba(0,0,0,0.75);
+        box-shadow: 0px 7px 17px -12px rgba(0,0,0,0.75);
+        background-color:$background-l;
+        position:fixed;
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        
+
+        .logo{
+            padding:20px 0px;
+            a{
+                img{
+                    width:200px;
+                }
+               
+            }
+        }
+
+        .nav{
+            .nav-social{
+                display: none;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                .nav-items{
+                    line-height: 40px;
+                    i{
+                        color:$heading-color-l;
+                    }
+                    padding:20px;
+                    color:$content-color-l;
+                    font-size:$font-size-4;
+                    a{
+                        font-family:$content-font;
+                        text-decoration: none;
+                        color:$content-color-l;
+                        font-size:$font-size-4;
+                        &:hover{
+                            color:$heading-color-l;
+                        }
+                    }
+                }
+            }
+        }
+
+        .burger-menu{
+            
+            
+            .burger{
+                display:none;
+                padding:10px;
+                border-radius: 50%;
+                color:$content-color-l-xl;
+                &:hover{
+                    background-color:$background-l-contrast;
+                    color:$heading-color-l;
+                }
+               
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width:700px)
+{
+    nav{
+        
+        .navbar{
+            padding:0px 10px;
+            justify-content:space-between;
+            .logo{
+                display:flex;
+                align-items: center;
+                padding:5px 5px;
+                a{
+                    display: block;
+                    img{
+                        width:150px;
+                    }
+                }
+            }
+
+            .nav{
+                transition:left 0.5s cubic-bezier(0.75, 0.35, 0.46, 1);
+                position: absolute;
+                overflow-y:scroll;
+                -webkit-box-shadow: 7px 0px 18px -7px rgba(0,0,0,0.75);
+                -moz-box-shadow: 7px 0px 18px -7px rgba(0,0,0,0.75);
+                box-shadow: 7px 0px 18px -7px rgba(0,0,0,0.75);
+                padding:150px 20px 50px 20px;
+                top:0;
+                left:-100vw;
+                background-color:$background-l;
+                min-height:100vh;
+                max-height: 500px;
+                min-width: 70%;
+                .nav-social{
+                    text-align: left;
+                    display: block;
+                    padding:50px 0px;
+                    a{
+                        text-decoration: none;
+                        padding:5px;
+                        color:$content-color-l;
+                    }
+                }
+                ul{
+                    display:block;
+                    .nav-items{
+                        padding:5px;
+                        text-align: left;
+                        a{
+                            font-size:$font-size-3;
+                            i{
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .burger-menu{
+                .burger{
+                    display: block;
+                }
+            }
+        }
+    }
+}

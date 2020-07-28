@@ -1,0 +1,108 @@
+.landing-container {
+  padding: 10px;
+}
+.landing-container .landing {
+  padding: 100px 20px 50px 20px;
+  text-align: center;
+}
+.landing-container .landing .image img {
+  width: 500px;
+}
+@media screen and (max-width: 750px) {
+  .landing-container .landing .image img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .landing-container .landing .image img {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 415px) {
+  .landing-container .landing .image img {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 365px) {
+  .landing-container .landing .image img {
+    width: 250px;
+  }
+}
+.landing-container .landing .text h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+  padding: 0px 10px 10px 10px;
+}
+.landing-container .landing .text p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0px 10px 20px 10px;
+}
+.landing-container .landing .text .buttons {
+  padding: 10px;
+}
+.landing-container .landing .text .buttons a {
+  margin: 5px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #eb530d;
+  color: #eb530d;
+  border-radius: 5px;
+  transition: background-color 0.4s;
+}
+.landing-container .landing .text .buttons a:hover {
+  color: white;
+  background-color: #eb530d;
+  transition: background-color 0.2s;
+}
+
+.explore-container {
+  padding: 50px 10px;
+  text-align: center;
+}
+.explore-container h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+  padding: 0px 10px 10px 10px;
+}
+.explore-container p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 0px 10px 20px 10px;
+}
+.explore-container .explore-cards {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.explore-container .explore-cards .card {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.2s;
+}
+.explore-container .explore-cards .card .image img {
+  width: 150px;
+}
+.explore-container .explore-cards .card:hover {
+  -webkit-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.51);
+  box-shadow: 4px 4px 15px -4px rgba(0, 0, 0, 0.51);
+  transition: box-shadow 0.4s;
+}
+@media screen and (max-width: 700px) {
+  .explore-container .explore-cards .card {
+    box-shadow: none;
+  }
+  .explore-container .explore-cards .card:hover {
+    box-shadow: none;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
