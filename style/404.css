@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.page {
+  text-align: center;
+  padding: 150px 20px;
+}
+.page h1 {
+  font-size: 36px;
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+}
+.page p {
+  padding-bottom: 50px;
+}
+.page a {
+  padding: 10px 30px;
+  color: #eb530d;
+  font-size: 24px;
+  text-decoration: none;
+  border: 1px solid #eb530d;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=404.css.map */

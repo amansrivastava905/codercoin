@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+// variables(always list them here)
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+
+
+
+$content-color-l:rgba(0,0,0,0.7);
+$content-color-l-xl:rgba(0,0,0,0.5);
+$heading-color-l:rgb(235, 83, 13);
+$background-l:rgba(255,255,255,0.95);
+$background-l-contrast:rgba(0,0,0,0.05);
+
+
+$font-size-1:36px;
+$font-size-2:28px;
+$font-size-3:24px;
+$font-size-4:20px;
+$font-size-5:18px;
+$font-size-6:16px;
+$font-size-7:12px;
+
+
+.page{
+    text-align: center;
+    padding: 150px 20px;
+    h1{
+        font-size: $font-size-1;
+        font-family: $heading-font;
+        color: $heading-color-l;
+    }
+    p{
+        padding-bottom: 50px;
+    }
+    a{
+        padding:10px 30px;
+        color:$heading-color-l;
+        font-size: $font-size-3;
+        text-decoration: none;
+        border:1px solid $heading-color-l;
+        border-radius: 5px;
+    }
+}
