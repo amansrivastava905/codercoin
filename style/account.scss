@@ -1,0 +1,109 @@
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+
+
+
+$content-color-l:rgba(0,0,0,0.7);
+$content-color-l-xl:rgba(0,0,0,0.5);
+$content-color-l-contrast:rgba(255,255,255,1);
+$heading-color-l:rgb(235, 83, 13);
+$background-l:rgba(255,255,255,0.95);
+$background-l-contrast:rgba(0,0,0,0.05);
+
+
+$font-size-1:36px;
+$font-size-2:28px;
+$font-size-3:24px;
+$font-size-4:20px;
+$font-size-5:18px;
+$font-size-6:16px;
+$font-size-7:12px;
+
+
+
+
+.account-container{
+    padding:80px 10px 50px 10px;
+
+    h1{
+        color:$heading-color-l;
+        font-family: $heading-font;
+        text-align: center;
+        padding:50px 10px;
+    }
+
+    .account{
+        text-align: center;
+        .image{
+            text-align: center;
+            img{
+                width:200px;
+                border-radius: 50%;
+            }
+        }
+        .name{
+            text-align: center;
+            h2{
+                font-family: $heading-font;
+                color:$content-color-l;
+            }
+        }
+
+        .details{
+            padding:20px 0px;
+            // text-align: center;
+            p{
+                font-family: $heading-font;
+                color:$content-color-l;
+                span{
+                    font-family: $content-font;
+                }
+            }
+        }
+
+        .buttons{
+            padding:20px 0px;
+            button{
+                padding:5px 10px;
+                margin:5px;
+                background-color: $heading-color-l;
+                font-family: $content-font;
+                border:1px solid $heading-color-l;
+                border-radius: 3px;
+                color:whitesmoke;
+                transition: background-color 0.4s;
+                outline: none;
+                &:hover{
+                    transition: background-color 0.2s;
+                    background-color: white;
+                    color:$heading-color-l;
+                    cursor: pointer;
+                }
+            }
+
+
+        }
+
+    }
+
+    .misc{
+        @media screen and (max-width:600px){
+            padding:10px 50px;
+        }
+        @media screen and (max-width:500px){
+            padding:10px 10px;
+        }
+        padding:10px 100px;
+        display: flex;
+        justify-content: space-around;
+        a{
+            text-decoration: none;
+            font-family: $content-font;
+            color:$content-color-l;
+            margin:10px 10px;
+            &:hover{
+                color:$heading-color-l;
+            }
+        }
+    }
+}

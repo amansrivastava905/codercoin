@@ -1,0 +1,82 @@
+.account-container {
+  padding: 80px 10px 50px 10px;
+}
+.account-container h1 {
+  color: #eb530d;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding: 50px 10px;
+}
+.account-container .account {
+  text-align: center;
+}
+.account-container .account .image {
+  text-align: center;
+}
+.account-container .account .image img {
+  width: 200px;
+  border-radius: 50%;
+}
+.account-container .account .name {
+  text-align: center;
+}
+.account-container .account .name h2 {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.account-container .account .details {
+  padding: 20px 0px;
+}
+.account-container .account .details p {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.account-container .account .details p span {
+  font-family: "Roboto", sans-serif;
+}
+.account-container .account .buttons {
+  padding: 20px 0px;
+}
+.account-container .account .buttons button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #eb530d;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  color: whitesmoke;
+  transition: background-color 0.4s;
+  outline: none;
+}
+.account-container .account .buttons button:hover {
+  transition: background-color 0.2s;
+  background-color: white;
+  color: #eb530d;
+  cursor: pointer;
+}
+.account-container .misc {
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  .account-container .misc {
+    padding: 10px 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .account-container .misc {
+    padding: 10px 10px;
+  }
+}
+.account-container .misc a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 10px 10px;
+}
+.account-container .misc a:hover {
+  color: #eb530d;
+}
+
+/*# sourceMappingURL=account.css.map */
