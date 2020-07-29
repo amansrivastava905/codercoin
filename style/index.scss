@@ -230,6 +230,24 @@ html{
         color: $heading-color-l;
     }
 
+    .login-message-success{
+        color:rgb(15, 184, 57);
+        border-radius: 4px;
+        border:1px solid rgb(15, 184, 57);
+        padding:10px;
+        font-family: $content-font;
+        margin:10px;
+    }
+
+    .login-message-error{
+        color:rgb(201, 14, 45);
+        border-radius: 4px;
+        border:1px solid rgb(201, 14, 45);
+        padding:10px;
+        font-family: $content-font;
+        margin:10px;
+    }
+
     .login-div{
         display: flex;
         justify-content:space-evenly;

@@ -179,6 +179,22 @@ html {
   font-family: "Montserrat", sans-serif;
   color: #eb530d;
 }
+.login-container .login-message-success {
+  color: #0fb839;
+  border-radius: 4px;
+  border: 1px solid #0fb839;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+.login-container .login-message-error {
+  color: #c90e2d;
+  border-radius: 4px;
+  border: 1px solid #c90e2d;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
 .login-container .login-div {
   display: flex;
   justify-content: space-evenly;
