@@ -48,10 +48,45 @@
   transition: background-color 0.4s;
   outline: none;
 }
-.account-container .account .buttons button:hover {
+.account-container .account .buttons button:active {
   transition: background-color 0.2s;
   background-color: white;
   color: #eb530d;
+  cursor: pointer;
+}
+.account-container .account .buttons button:hover {
+  cursor: pointer;
+}
+.account-container .password-setting {
+  display: none;
+  text-align: center;
+  padding: 20px;
+}
+.account-container .password-setting form input {
+  font-family: "Roboto", sans-serif;
+  border: none;
+  border-bottom: 1px solid #eb530d;
+  outline: none;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.account-container .password-setting form button {
+  padding: 5px 10px;
+  margin: 5px;
+  background-color: #eb530d;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  color: whitesmoke;
+  transition: background-color 0.4s;
+  outline: none;
+}
+.account-container .password-setting form button:active {
+  transition: background-color 0.2s;
+  background-color: white;
+  color: #eb530d;
+}
+.account-container .password-setting form button:hover {
   cursor: pointer;
 }
 .account-container .misc {
@@ -77,6 +112,24 @@
 }
 .account-container .misc a:hover {
   color: #eb530d;
+}
+
+.login-message-success {
+  color: #0fb839;
+  border-radius: 4px;
+  border: 1px solid #0fb839;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
+}
+
+.login-message-error {
+  color: #c90e2d;
+  border-radius: 4px;
+  border: 1px solid #c90e2d;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=account.css.map */
