@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing {
+  padding: 150px 10px 50px 10px;
+}
+@media screen and (max-width: 600px) {
+  .landing {
+    padding: 50px 10px 50px 10px;
+  }
+}
+.landing .landing-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.landing .landing-wrapper .purpose {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+.landing .landing-wrapper .purpose .image img {
+  width: 300px;
+}
+.landing .landing-wrapper .purpose .text h1 {
+  color: #eb530d;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 10px;
+}
+.landing .landing-wrapper .purpose .text p {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 20px;
+}
+.landing .landing-wrapper .purpose .text a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  background-color: #eb530d;
+  color: whitesmoke;
+  transition: background-color 0.2s;
+}
+.landing .landing-wrapper .purpose .text a:hover {
+  color: #eb530d;
+  background-color: white;
+  transition: background-color 0.4s;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=contest.css.map */

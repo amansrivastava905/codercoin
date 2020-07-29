@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+// variables(always list them here)
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+
+
+
+$content-color-l:rgba(0,0,0,0.7);
+$content-color-l-xl:rgba(0,0,0,0.5);
+$heading-color-l:rgb(235, 83, 13);
+$background-l:rgba(255,255,255,0.95);
+$background-l-contrast:rgba(0,0,0,0.05);
+
+
+$font-size-1:36px;
+$font-size-2:28px;
+$font-size-3:24px;
+$font-size-4:20px;
+$font-size-5:18px;
+$font-size-6:16px;
+$font-size-7:12px;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+// landing
+
+
+.landing{
+    padding:150px 10px 50px 10px;
+    @media screen and (max-width:600px){
+        padding:50px 10px 50px 10px;
+    }
+
+    .landing-wrapper{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .purpose{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding:10px;
+            margin:5px;
+            text-align: center;
+            .image{
+                img{
+                    width:300px;
+                }
+            }
+            .text{
+                h1{
+                    color: $heading-color-l;
+                    font-family: $heading-font;
+                    padding-bottom: 10px;
+                }
+
+                p{
+                    font-family: $content-font;
+                    color: $content-color-l;
+                    padding-bottom: 20px;
+                }
+
+                a{
+                    font-family: $content-font;
+                    text-decoration: none;
+                    padding:5px 10px;
+                    border:1px solid $heading-color-l;
+                    border-radius: 3px;
+                    background-color: $heading-color-l;
+                    color:whitesmoke;
+                    transition: background-color 0.2s;
+                    &:hover{
+                        color:$heading-color-l;
+                        background-color: white;
+                        transition: background-color 0.4s;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
