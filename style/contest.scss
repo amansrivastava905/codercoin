@@ -147,3 +147,113 @@ html{
         }
     }
 }
+
+
+
+// contest
+
+
+.contest-section{
+    padding:50px 10px 50px 10px;
+    text-align: center;
+
+    h1{
+        font-family: $heading-font;
+        color: $heading-color-l;
+    }
+
+    .contest-wrapper{
+        padding:50px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .contest{
+            margin: 20px 0px 50px 0px;
+            h2{
+                font-family: $heading-font;
+                color:$heading-color-l;
+                padding:50px 0px;
+            }
+
+            .contest-card{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;        
+                padding:5px;
+                .content{
+                    transition: box-shadow 0.2s;
+                    &:hover{
+                        -webkit-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
+                        -moz-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
+                        box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
+                        transition: box-shadow 0.4s;
+                    }
+                    border: 1px solid $content-color-l-xxl;
+                    padding:20px 10px;
+                    margin: 10px 5px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    .image{
+
+                        img{
+                            width:100px;
+                            padding:10px;
+                            border-radius: 10px;
+                            background-color:$background-l-contrast;
+                        }
+                    }
+
+                    .text{
+                        h4{
+                            color:$heading-color-l;
+                            font-family: $heading-font;
+                            padding-bottom:5px;
+                        }
+                        h5{
+                            color:$content-color-l;
+                            font-family: $content-font;
+                        }
+
+                        .details{
+                            display: flex;
+                            justify-content: space-between;
+                            flex-wrap: wrap;
+                            font-family:$heading-font;
+                            color: $heading-color-l;
+                            padding:20px 5px 10px 5px;
+                            font-size:$font-size-4; 
+                        }
+                        .enter{
+                            padding-top:10px;
+                            button{
+                                 font-family: $content-font;
+                                 padding:5px 10px;
+                                 border:1px solid $heading-color-l;
+                                 border-radius: 3px;
+                                 background-color: $heading-color-l;
+                                 color:whitesmoke;
+                                 transition: background-color 0.2s;
+                                 outline:none;
+                                 &:active{
+                                    color:$heading-color-l;
+                                    background-color: white;
+                                    transition: background-color 0.4s;
+                                 }
+
+                                 &:hover{
+                                    cursor: pointer;
+                                 }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+
+        }
+    }
+}

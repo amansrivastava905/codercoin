@@ -107,4 +107,94 @@ html {
   text-decoration: none;
 }
 
+.contest-section {
+  padding: 50px 10px 50px 10px;
+  text-align: center;
+}
+.contest-section h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+}
+.contest-section .contest-wrapper {
+  padding: 50px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contest-section .contest-wrapper .contest {
+  margin: 20px 0px 50px 0px;
+}
+.contest-section .contest-wrapper .contest h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+  padding: 50px 0px;
+}
+.contest-section .contest-wrapper .contest .contest-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+.contest-section .contest-wrapper .contest .contest-card .content {
+  transition: box-shadow 0.2s;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 20px 10px;
+  margin: 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contest-section .contest-wrapper .contest .contest-card .content:hover {
+  -webkit-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+  -moz-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+  box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+  transition: box-shadow 0.4s;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .image img {
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text h4 {
+  color: #eb530d;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 5px;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text h5 {
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text .details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+  padding: 20px 5px 10px 5px;
+  font-size: 20px;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text .enter {
+  padding-top: 10px;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text .enter button {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 10px;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  background-color: #eb530d;
+  color: whitesmoke;
+  transition: background-color 0.2s;
+  outline: none;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text .enter button:active {
+  color: #eb530d;
+  background-color: white;
+  transition: background-color 0.4s;
+}
+.contest-section .contest-wrapper .contest .contest-card .content .text .enter button:hover {
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=contest.css.map */
