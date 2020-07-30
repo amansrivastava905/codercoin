@@ -154,7 +154,7 @@ html{
 
 
 .contest-section{
-    padding:50px 10px 50px 10px;
+    padding:80px 10px 50px 10px;
     text-align: center;
 
     h1{
@@ -165,11 +165,12 @@ html{
     .contest-wrapper{
         padding:50px 0px 10px 0px;
         display: flex;
-        justify-content: center;
+        justify-content:space-around;
         flex-wrap: wrap;
 
         .contest{
-            margin: 20px 0px 50px 0px;
+            margin: 10px 0px 50px 0px;
+            padding-top:40px;
             h2{
                 font-family: $heading-font;
                 color:$heading-color-l;
@@ -182,6 +183,7 @@ html{
                 flex-wrap: wrap;        
                 padding:5px;
                 .content{
+                    background-color: rgba(255,255,255,0.8);
                     transition: box-shadow 0.2s;
                     &:hover{
                         -webkit-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
@@ -228,7 +230,8 @@ html{
                         }
                         .enter{
                             padding-top:10px;
-                            button{
+                               a{
+                                   text-decoration: none;
                                  font-family: $content-font;
                                  padding:5px 10px;
                                  border:1px solid $heading-color-l;
@@ -256,4 +259,67 @@ html{
 
         }
     }
+}
+
+
+
+
+// organiser
+
+.organiser-section{
+    background-color:$heading-color-l;
+    padding:50px 10px 100px 10px;
+    text-align: center;
+    h1{
+        font-family: $heading-font;
+        color:whitesmoke;
+        padding:50px 0px 0px 10px;
+    }
+
+    p{
+        color:whitesmoke;
+        font-family: $content-font;
+        padding-bottom: 20px;
+    }
+
+    form{
+        padding:10px;
+        input{
+            border:none;
+            border-bottom:1px solid $heading-color-l;
+            color:$heading-color-l;
+            font-family: $content-font;
+            padding:10px;
+            outline:none;
+            width:500px;
+
+            @media screen and (max-width:650px){
+                width:90%;
+            }
+        }
+
+        button{
+            margin-top: 20px;
+            text-decoration: none;
+            font-family: $content-font;
+            padding:10px 30px;
+            border:1px solid white;
+            border-radius: 2px;
+            background-color:white;
+            color:$heading-color-l;
+            transition: background-color 0.2s;
+            outline:none;
+            &:active{
+               color:white;
+               background-color:$heading-color-l;
+               transition: background-color 0.4s;
+            }
+
+            &:hover{
+               cursor: pointer;
+            }
+        }
+    }
+
+
 }
