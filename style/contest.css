@@ -60,4 +60,51 @@ html {
   cursor: pointer;
 }
 
+.topic-container {
+  padding: 150px 10px;
+  text-align: center;
+}
+.topic-container h1 {
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+}
+.topic-container .topic-wrapper {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.topic-container .topic-wrapper .topic {
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px 10px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.topic-container .topic-wrapper .topic:hover {
+  -webkit-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+  -moz-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+  box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+  transition: box-shadow 0.4s;
+}
+.topic-container .topic-wrapper .topic a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+.topic-container .topic-wrapper .topic .image img {
+  width: 100px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 10px;
+}
+.topic-container .topic-wrapper .topic .text h3 {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=contest.css.map */
