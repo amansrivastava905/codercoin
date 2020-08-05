@@ -25,6 +25,7 @@ $font-size-4:20px;
 $font-size-5:18px;
 $font-size-6:16px;
 $font-size-7:12px;
+$font-size-8:8px;
 
 
 html{
@@ -69,8 +70,8 @@ html{
                     .image{
                         padding-right: 5px;
                         img{
-                            width:120px;
-                            padding:10px;
+                            width:100px;
+                            padding:20px;
                             border-radius: 50%;
                             background-color: $background-l-contrast;
                         }
@@ -83,12 +84,15 @@ html{
                             font-family: $heading-font;
                             color: $heading-color-l;
                             text-align: left;
+                            font-size: $font-size-4;
                             
                         }
                         h3{
                             font-family: $content-font;
                             color:$content-color-l;
                             font-weight: lighter;
+                            font-size: $font-size-7;
+                            text-align: center;
                         }
                     }
                 }
@@ -109,11 +113,13 @@ html{
                             color:whitesmoke;
                             font-weight: lighter;
                             font-family: $content-font;
+                            font-size: $font-size-7;
                         }
 
                         h3{
                             color:white;
                             font-family: $heading-font;
+                            font-size: $font-size-6;
                         }
                     }
 
@@ -128,11 +134,13 @@ html{
                             color:whitesmoke;
                             font-weight: lighter;
                             font-family: $content-font;
+                            font-size: $font-size-7;
                         }
 
                         h3{
                             color:white;
                             font-family: $heading-font;
+                            font-size: $font-size-6;
                         }
                     }
                 }
@@ -147,11 +155,13 @@ html{
                             font-weight: lighter;
                             font-family: $content-font;
                             color:$content-color-l;
+                            font-size: $font-size-7;
                         }
     
                         h3{
                             font-family: $heading-font;
                             color:$heading-color-l;
+                            font-size: $font-size-6;
                         }
                     }
 
@@ -162,11 +172,13 @@ html{
                             font-weight: lighter;
                             font-family: $content-font;
                             color:$content-color-l;
+                            font-size: $font-size-7;
                         }
     
                         h3{
                             font-family: $heading-font;
                             color:$heading-color-l;
+                            font-size: $font-size-6;
                         }
                     }
                 }
@@ -195,6 +207,53 @@ html{
 
                     }
                 }
+            }
+        }
+    }
+}
+
+
+
+
+.contest-history-wrapper{
+    padding:20px 10px;
+    .contest-history{
+        h1{
+            text-align: center;
+            padding:20px 0px 30px 0px;
+            color:$heading-color-l;
+            font-family: $heading-font;
+        }
+
+        .history-container{
+            display: flex;
+            justify-content: center;
+            padding:10px;
+            overflow:auto;
+            table{
+                min-width: 100%;
+                border-collapse: collapse;
+
+                th{
+                    border:1px solid $heading-color-l;
+                    font-family: $heading-font;
+                    color:whitesmoke;
+                    background-color: $heading-color-l;
+                    padding:10px 20px;
+                    font-size: $font-size-4;
+                }
+
+                td{
+                    border:0.5px solid $heading-color-l;
+                    font-family: $content-font;
+                    color:$content-color-l;
+                    text-align: center;
+                    padding:5px 10px;
+                }
+
+               
+
+                tr:hover {background-color: rgb(243, 242, 242);}
             }
         }
     }

@@ -46,8 +46,8 @@ html {
   padding-right: 5px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .contest-head .image img {
-  width: 120px;
-  padding: 10px;
+  width: 100px;
+  padding: 20px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.05);
 }
@@ -60,11 +60,14 @@ html {
   font-family: "Montserrat", sans-serif;
   color: #eb530d;
   text-align: left;
+  font-size: 20px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .contest-head .heading h3 {
   font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.7);
   font-weight: lighter;
+  font-size: 12px;
+  text-align: center;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .prize-detail {
   display: flex;
@@ -83,10 +86,12 @@ html {
   color: whitesmoke;
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .prize-detail .entry-fee h3 {
   color: white;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .prize-detail .prize-ammount {
   flex: 1;
@@ -100,10 +105,12 @@ html {
   color: whitesmoke;
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
+  font-size: 12px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .prize-detail .prize-ammount h3 {
   color: white;
   font-family: "Montserrat", sans-serif;
+  font-size: 16px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .details {
   display: flex;
@@ -117,10 +124,12 @@ html {
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .details .opponent h3 {
   font-family: "Montserrat", sans-serif;
   color: #eb530d;
+  font-size: 16px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .details .contest-type {
   text-align: center;
@@ -130,10 +139,12 @@ html {
   font-weight: lighter;
   font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .details .contest-type h3 {
   font-family: "Montserrat", sans-serif;
   color: #eb530d;
+  font-size: 16px;
 }
 .registered-activity-container .registered-activity .registered-contest-container .registered-contest .start-match {
   padding: 10px 0px;
@@ -156,6 +167,44 @@ html {
   background-color: #eb530d;
   color: white;
   transition: background-color 0.3s;
+}
+
+.contest-history-wrapper {
+  padding: 20px 10px;
+}
+.contest-history-wrapper .contest-history h1 {
+  text-align: center;
+  padding: 20px 0px 30px 0px;
+  color: #eb530d;
+  font-family: "Montserrat", sans-serif;
+}
+.contest-history-wrapper .contest-history .history-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  overflow: auto;
+}
+.contest-history-wrapper .contest-history .history-container table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+.contest-history-wrapper .contest-history .history-container table th {
+  border: 1px solid #eb530d;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  background-color: #eb530d;
+  padding: 10px 20px;
+  font-size: 20px;
+}
+.contest-history-wrapper .contest-history .history-container table td {
+  border: 0.5px solid #eb530d;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 5px 10px;
+}
+.contest-history-wrapper .contest-history .history-container table tr:hover {
+  background-color: #f3f2f2;
 }
 
 /*# sourceMappingURL=activity.css.map */
