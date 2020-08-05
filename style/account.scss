@@ -158,6 +158,28 @@ $font-size-7:12px;
                     transition: background-color 0.2s;
                 }
             }
+
+            button{
+                padding:6px 20px;
+                margin-top:15px;
+                border:none;
+                border: 1px solid $heading-color-l;
+                border-radius: 3px;
+                outline: none;
+                text-decoration: none;
+                color:$heading-color-l;
+                background-color:white;
+                font-family: $content-font;
+                transition: background-color 0.2s;
+                &:hover{
+                    cursor: pointer;
+                }
+                &:active{
+                    color:$heading-color-l;
+                    background-color: whitesmoke;
+                    transition: background-color 0.2s;
+                }
+            }
         }
 
         .change-message{
@@ -240,6 +262,22 @@ $font-size-7:12px;
                         }
                     }
                 }
+            }
+        }
+    }
+
+    .imp-links{
+        padding:50px 0px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            padding:0px 10px;
+            font-family: $content-font;
+            color:$content-color-l;
+            font-size: $font-size-5;
+
+            &:hover{
+                color:$heading-color-l;
             }
         }
     }

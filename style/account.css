@@ -134,6 +134,27 @@
   background-color: whitesmoke;
   transition: background-color 0.2s;
 }
+.account-container .user .buttons button {
+  padding: 6px 20px;
+  margin-top: 15px;
+  border: none;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  outline: none;
+  text-decoration: none;
+  color: #eb530d;
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  transition: background-color 0.2s;
+}
+.account-container .user .buttons button:hover {
+  cursor: pointer;
+}
+.account-container .user .buttons button:active {
+  color: #eb530d;
+  background-color: whitesmoke;
+  transition: background-color 0.2s;
+}
 .account-container .user .change-message {
   padding: 10px 0px;
   text-align: center;
@@ -210,6 +231,20 @@
   background-color: whitesmoke;
   color: #eb530d;
   transition: background-color 0.2s;
+}
+.account-container .imp-links {
+  padding: 50px 0px;
+  text-align: center;
+}
+.account-container .imp-links a {
+  text-decoration: none;
+  padding: 0px 10px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 18px;
+}
+.account-container .imp-links a:hover {
+  color: #eb530d;
 }
 
 /*# sourceMappingURL=account.css.map */

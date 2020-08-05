@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+// variables(always list them here)
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+
+
+
+$content-color-l:rgba(0,0,0,0.7);
+$content-color-l-xl:rgba(0,0,0,0.5);
+$content-color-l-xxl:rgba(0,0,0,0.3);
+$heading-color-l:rgb(235, 83, 13);
+$background-l:rgba(255,255,255,0.95);
+$background-l-contrast:rgba(0,0,0,0.05);
+
+
+$font-size-1:36px;
+$font-size-2:28px;
+$font-size-3:24px;
+$font-size-4:20px;
+$font-size-5:18px;
+$font-size-6:16px;
+$font-size-7:12px;
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+.registered-activity-container{
+    padding:10px;
+    .registered-activity{
+        padding:100px 0px;
+        h1{
+            text-align: center;
+            color:$heading-color-l;
+            font-family: $heading-font;
+        }
+        .registered-contest-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            padding: 50px 0px;
+            .registered-contest{
+
+                &:hover{
+                    -webkit-box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+                    box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+                    transition: box-shadow 0.4s;
+                }
+
+                transition: box-shadow 0.2s;
+                border:1px solid $content-color-l-xxl;
+                border-radius: 10px;
+                margin:20px;
+
+                .contest-head{
+                    
+                    padding: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    .image{
+                        padding-right: 5px;
+                        img{
+                            width:120px;
+                            padding:10px;
+                            border-radius: 50%;
+                            background-color: $background-l-contrast;
+                        }
+                    }
+                    .heading{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h2{
+                            font-family: $heading-font;
+                            color: $heading-color-l;
+                            text-align: left;
+                            
+                        }
+                        h3{
+                            font-family: $content-font;
+                            color:$content-color-l;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+
+                .prize-detail{
+                    display: flex;
+                    justify-content: space-between;
+                    padding:10px 0px;
+
+                    .entry-fee{
+                        flex: 1;
+                        padding:10px;
+                        background-color: $heading-color-l;
+                        text-align: center;
+                        margin-right: 30px;
+                        border-radius: 0px 50px 50px 0px;
+                        h5{
+                            color:whitesmoke;
+                            font-weight: lighter;
+                            font-family: $content-font;
+                        }
+
+                        h3{
+                            color:white;
+                            font-family: $heading-font;
+                        }
+                    }
+
+                    .prize-ammount{
+                        flex:1;
+                        padding:10px;
+                        background-color: $heading-color-l;
+                        text-align: center;
+                        margin-left: 30px;
+                        border-radius: 50px 0px 0px 50px;
+                        h5{
+                            color:whitesmoke;
+                            font-weight: lighter;
+                            font-family: $content-font;
+                        }
+
+                        h3{
+                            color:white;
+                            font-family: $heading-font;
+                        }
+                    }
+                }
+
+                .details{
+                    display: flex;
+                    justify-content: space-between;
+                    .opponent{
+                        text-align: center;
+                        padding: 10px;
+                        h5{
+                            font-weight: lighter;
+                            font-family: $content-font;
+                            color:$content-color-l;
+                        }
+    
+                        h3{
+                            font-family: $heading-font;
+                            color:$heading-color-l;
+                        }
+                    }
+
+                    .contest-type{
+                        text-align: center;
+                        padding: 10px;
+                        h5{
+                            font-weight: lighter;
+                            font-family: $content-font;
+                            color:$content-color-l;
+                        }
+    
+                        h3{
+                            font-family: $heading-font;
+                            color:$heading-color-l;
+                        }
+                    }
+                }
+
+                .start-match{
+                    padding:10px 0px;
+                    text-align: center;
+                    button{
+                        padding:5px 30px;
+                        outline:none;
+                        border:1px solid $heading-color-l;
+                        color:$heading-color-l;
+                        font-family: $content-font;
+                        background-color: white;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+                        &:hover{
+                            cursor: pointer;
+                        }
+
+                        &:active{
+                            background-color: $heading-color-l;
+                            color:white;
+                            transition: background-color 0.3s;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
