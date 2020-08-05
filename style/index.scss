@@ -267,10 +267,11 @@ html{
                 input{
                     padding:5px;
                     width:300px;
-                    margin:5px 0px;
+                    margin:10px 0px;
                     outline:none;
                     border:none;
-                    border-bottom: 1px solid $heading-color-l;
+                    border-radius: 3px;
+                    border: 1px solid $heading-color-l;
                     font-family: $content-font;
                     font-size: $font-size-6;
                 }
@@ -301,7 +302,7 @@ html{
                     line-height: 40px;
                     text-decoration: none;
                     font-family: $content-font;
-                    border-radius: 3px;
+                    border-radius:3px;
                 }
 
                 .facebook{
@@ -319,4 +320,4 @@ html{
             }
         }
     }
-}
+}   

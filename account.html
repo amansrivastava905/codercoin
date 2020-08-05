@@ -29,26 +29,39 @@
         position:fixed;
         background-color:rgba(0, 0, 0, 0.5);
         overflow:auto
+    }
+    
+    #coverAll2 {
+        width:100%;
+        height:100%;
+        opacity:.99;
+        top:0;
+        left:0;
+        display:none;
+        position:fixed;
+        background-color:rgba(0, 0, 0, 0.7);
+        overflow:auto
 	}
 </style>
 
 <body>
 
     <div id="coverAll" onclick="navigation()"></div>
+    <div id="coverAll2" onclick="settingVis()"></div>
 
      <!-- navbar -->
 
      <nav>
         <div class="navbar">
             <div class="logo">
-                <a href="#"><img src="logo/codecoin-t.png" alt="logo"></a>
+                <a href="index.html"><img src="image/codecoin-t.png" alt="logo"></a>
             </div>
             <div class="nav">
                 
                 <ul>
                     <li class="nav-items"><a href="contest.html"><i class="fas fa-code"></i> Contest</a></i></li>
-                    <li class="nav-items"><a href="leaderboard.html"> <i class="fas fa-award"></i> Leaderboard</a></li>
-                    <li class="nav-items"><a href="#login"> <i class="far fa-user"></i> Login</a></li>
+                    <li class="nav-items"><a href="activity.html"> <i class="fas fa-award"></i> My activity</a></li>
+                    <li class="nav-items"><a href="index.html#login"> <i class="far fa-user"></i> Login</a></li>
                 </ul>
 
                 <div class="nav-social">
@@ -71,60 +84,72 @@
 
 
 
-    <!-- account-home -->
+    <!-- user account basic details -->
 
     <div class="account-container">
+
         <h1>ACCOUNT & SETTINGS</h1>
-        <div class="account">
+
+        <div class="user">
             <div class="image">
-                <img src="image/account-user-default.png" alt="user default profile">
+                <img src="image/account-user-default.png" alt="profile image">
             </div>
             <div class="name">
-                <h2>BIJANT PODDAR RAMPUR</h2>
+                <!-- name & userid -->
+                <h2>Aman Srivastava</h2>
+                <p>aman_hero_01</p>
+                <h3>amansrivastava905@gmail.com</h3>
             </div>
-            <div class="details">
-                <p class="account-email">Email- <span>bijantchem@gmail.com</span></p>
-                <p class="account-userID">User ID- <span>chota_don</span></p>
-                <p class="account-UPI">UPI- <span>bijantchem@okicici</span></p>
-                <p class="account-ballance">Ballance- <span>₹1234</span></p>
+            <div class="personal-details-container">
+                <div class="personal-details">
+                    <div class="content">
+                        <h3 class="title">Wallet points</h3>
+                        <h3 class="value">1500</h3>
+                    </div>
+                    <div class="content winning-streak">
+                        <h3 class="title">Winning streak</h3>
+                        <h3 class="value">65%</h3>
+                    </div>
+                    <div class="content">
+                        <h3 class="title">Matches played</h3>
+                        <h3 class="value">69</h3>
+                    </div>
+                </div>
             </div>
 
             <div class="buttons">
-                <button class="User-settings">User Settings</button>
-                <button class="password">Change Password</button>
-                <button class="user-achievements">My activity</button>
+                <a href="activity.html">My activity</a>
+                <a class="setting-button">Settings</a>
+            </div>
+            <!-- agr neeche message ka position change krega to css bhi change krna padega, caution -->
+            <!-- <div class="change-message">
+                    <div class="login-message-success">
+                            <p><i class="fa fa-check-circle"></i> Success, changes saved.</p>
+                    </div>
+                    <div class="login-message-error">
+                            <p><i class="fa fa-times-circle"></i> Some error encountered</p>
+                    </div>
+            </div> -->
+
+            <div class="setting-wrapper">
+                <div class="settings" style="display: none;">
+                    <h2>User Settings</h2>
+                    <p>Enter details you want to change.</p>
+                    <form>
+                        <label>Basic Details</label> <br>
+                        <input type="text" placeholder="Name"> <br>
+                        <input type="email" placeholder="email"> <br>
+                        <label>Password</label> <br>
+                        <input type="text" placeholder="Old Password"> <br>
+                        <input type="password" placeholder="New Password"> <br>
+                        <input type="password" placeholder="Type Again"> <br>
+                        <button type="submit">Save</button>
+                    </form>
+                </div>
             </div>
         </div>
 
-        <div class="password-setting">
-
-            <div class="login-message-success">
-                <p><i class="fa fa-check-circle"></i> Success, you are logged in</p>
-            </div>
-            <div class="login-message-error">
-                <p><i class="fa fa-times-circle"></i> Looks like you entered wrong details | account.css me inka style h.</p>
-            </div>
-            <form>
-                <input type="password" placeholder="Old password"> <br>
-                <input type="password" placeholder="New password"> <br>
-                <input type="password" placeholder="Type again"> <br>
-                <button type="submit">Change</button>
-
-            </form>
-        </div>
-
-        <div class="misc">
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a> 
-            <a href="#">About Us</a>
-        </div>
     </div>
-
-
-    <!-- settings -->
-
-   
-
 
 
     <!-- script files -->

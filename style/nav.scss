@@ -1,4 +1,15 @@
 *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
     box-sizing: border-box;
     padding: 0px;
     margin:0px;
@@ -13,7 +24,7 @@ $content-font:'Roboto', sans-serif;
 $content-color-l:rgba(0,0,0,0.7);
 $content-color-l-xl:rgba(0,0,0,0.5);
 $heading-color-l:rgb(235, 83, 13);
-$background-l:rgba(255,255,255,0.95);
+$background-l:rgba(255,255,255,0.92);
 $background-l-contrast:rgba(0,0,0,0.05);
 
 

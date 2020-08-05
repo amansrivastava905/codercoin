@@ -1,135 +1,215 @@
 .account-container {
-  padding: 80px 10px 50px 10px;
+  padding: 100px 10px 50px 10px;
 }
 .account-container h1 {
-  color: #eb530d;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
-  text-align: center;
-  padding: 50px 10px;
+  color: #eb530d;
 }
-.account-container .account {
-  text-align: center;
+.account-container .user {
+  padding: 20px 0px;
 }
-.account-container .account .image {
+.account-container .user .image {
   text-align: center;
+  margin: 20px 0px;
 }
-.account-container .account .image img {
+.account-container .user .image img {
   width: 200px;
   border-radius: 50%;
+  padding: 10px;
+  background-color: #ebebeb;
 }
-.account-container .account .name {
+.account-container .user .name h2 {
   text-align: center;
-}
-.account-container .account .name h2 {
   font-family: "Montserrat", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-}
-.account-container .account .details {
-  padding: 20px 0px;
-}
-.account-container .account .details p {
-  font-family: "Montserrat", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-}
-.account-container .account .details p span {
-  font-family: "Roboto", sans-serif;
-}
-.account-container .account .buttons {
-  padding: 20px 0px;
-}
-.account-container .account .buttons button {
-  padding: 5px 10px;
-  margin: 5px;
-  background-color: #eb530d;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid #eb530d;
-  border-radius: 3px;
-  color: whitesmoke;
-  transition: background-color 0.4s;
-  outline: none;
-}
-.account-container .account .buttons button:active {
-  transition: background-color 0.2s;
-  background-color: white;
-  color: #eb530d;
-  cursor: pointer;
-}
-.account-container .account .buttons button:hover {
-  cursor: pointer;
-}
-.account-container .password-setting {
-  display: none;
-  text-align: center;
-  padding: 20px;
-}
-.account-container .password-setting form input {
-  font-family: "Roboto", sans-serif;
-  border: none;
-  border-bottom: 1px solid #eb530d;
-  outline: none;
-  margin-bottom: 5px;
-  padding: 5px;
-}
-.account-container .password-setting form button {
-  padding: 5px 10px;
-  margin: 5px;
-  background-color: #eb530d;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid #eb530d;
-  border-radius: 3px;
-  color: whitesmoke;
-  transition: background-color 0.4s;
-  outline: none;
-}
-.account-container .password-setting form button:active {
-  transition: background-color 0.2s;
-  background-color: white;
   color: #eb530d;
 }
-.account-container .password-setting form button:hover {
-  cursor: pointer;
+.account-container .user .name p {
+  padding: 0px 0px 0px 0px;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
 }
-.account-container .misc {
-  padding: 10px 100px;
-  display: flex;
-  justify-content: space-around;
+.account-container .user .name h3 {
+  padding: 0px 0px 5px 0px;
+  color: #eb530d;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
 }
-@media screen and (max-width: 600px) {
-  .account-container .misc {
-    padding: 10px 50px;
+.account-container .user .personal-details-container {
+  padding: 20px 500px;
+}
+@media screen and (max-width: 1300px) {
+  .account-container .user .personal-details-container {
+    padding: 20px 400px;
   }
 }
-@media screen and (max-width: 500px) {
-  .account-container .misc {
+@media screen and (max-width: 1200px) {
+  .account-container .user .personal-details-container {
+    padding: 20px 300px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .account-container .user .personal-details-container {
+    padding: 20px 200px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .account-container .user .personal-details-container {
+    padding: 20px 150px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .account-container .user .personal-details-container {
+    padding: 20px 100px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .account-container .user .personal-details-container {
+    padding: 20px 50px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .account-container .user .personal-details-container {
     padding: 10px 10px;
   }
 }
-.account-container .misc a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-  margin: 10px 10px;
+.account-container .user .personal-details-container .personal-details {
+  padding: 10px;
 }
-.account-container .misc a:hover {
+.account-container .user .personal-details-container .personal-details .content {
+  border-bottom: 1px solid #eb530d;
+  display: flex;
+  justify-content: space-between;
+}
+.account-container .user .personal-details-container .personal-details .content h3 {
+  flex: 1;
+  padding: 5px 10px;
+  margin: 5px 0px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+}
+.account-container .user .personal-details-container .personal-details .content .title {
   color: #eb530d;
 }
-
-.login-message-success {
-  color: #0fb839;
-  border-radius: 4px;
-  border: 1px solid #0fb839;
-  padding: 10px;
-  font-family: "Roboto", sans-serif;
-  margin: 10px;
+.account-container .user .personal-details-container .personal-details .content .value {
+  text-align: right;
 }
-
-.login-message-error {
-  color: #c90e2d;
-  border-radius: 4px;
-  border: 1px solid #c90e2d;
-  padding: 10px;
+.account-container .user .personal-details-container .personal-details .winning-streak .value {
+  background: linear-gradient(to right, #e2e2e2 0%, #e2e2e2 2%, #dbdbdb 51%, #d1d1d1 100%);
+  border: 0.5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 50px;
+  font-weight: lighter;
+  color: black;
+  background-size: 89%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 350px) {
+  .account-container .user .personal-details-container .personal-details .winning-streak .value {
+    line-height: 40px;
+  }
+}
+.account-container .user .buttons {
+  text-align: center;
+  margin: 20px 0px;
+}
+.account-container .user .buttons a {
+  padding: 5px 20px;
+  margin: 3px;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  text-decoration: none;
+  color: white;
+  background-color: #eb530d;
   font-family: "Roboto", sans-serif;
-  margin: 10px;
+  transition: background-color 0.2s;
+}
+.account-container .user .buttons a:hover {
+  cursor: pointer;
+}
+.account-container .user .buttons a:active {
+  color: #eb530d;
+  background-color: whitesmoke;
+  transition: background-color 0.2s;
+}
+.account-container .user .change-message {
+  padding: 10px 0px;
+  text-align: center;
+}
+.account-container .user .change-message .login-message-success {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid green;
+  color: green;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+}
+.account-container .user .change-message .login-message-error {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid red;
+  color: red;
+  font-family: "Roboto", sans-serif;
+  border-radius: 5px;
+}
+.account-container .user .setting-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.account-container .user .setting-wrapper .settings {
+  position: fixed;
+  top: 100px;
+  text-align: center;
+  padding: 20px 10px;
+  margin: 10vh 0;
+  background-color: #ebebeb;
+  border-radius: 10px;
+}
+.account-container .user .setting-wrapper .settings h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+}
+.account-container .user .setting-wrapper .settings p {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.account-container .user .setting-wrapper .settings form {
+  padding: 20px 0px;
+}
+.account-container .user .setting-wrapper .settings form input {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  border: 0.5px solid #eb530d;
+  width: 300px;
+  border-radius: 3px;
+}
+@media screen and (max-width: 350px) {
+  .account-container .user .setting-wrapper .settings form input {
+    width: 250px;
+  }
+}
+.account-container .user .setting-wrapper .settings form button {
+  padding: 5px 30px;
+  margin-top: 5px;
+  outline: none;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  color: whitesmoke;
+  background-color: #eb530d;
+  transition: background-color 0.2s;
+}
+.account-container .user .setting-wrapper .settings form button:hover {
+  cursor: pointer;
+}
+.account-container .user .setting-wrapper .settings form button:active {
+  background-color: whitesmoke;
+  color: #eb530d;
+  transition: background-color 0.2s;
 }
 
 /*# sourceMappingURL=account.css.map */

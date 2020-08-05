@@ -1,4 +1,14 @@
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
@@ -8,7 +18,7 @@ nav .navbar {
   -webkit-box-shadow: 0px 7px 17px -12px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 7px 17px -12px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 7px 17px -12px rgba(0, 0, 0, 0.75);
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 0.92);
   position: fixed;
   width: 100%;
   display: flex;
@@ -82,7 +92,7 @@ nav .navbar .burger-menu .burger:hover {
     padding: 150px 20px 50px 20px;
     top: 0;
     left: -100vw;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.92);
     min-height: 100vh;
     max-height: 500px;
     min-width: 70%;

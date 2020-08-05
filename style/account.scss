@@ -8,7 +8,7 @@ $content-color-l-xl:rgba(0,0,0,0.5);
 $content-color-l-contrast:rgba(255,255,255,1);
 $heading-color-l:rgb(235, 83, 13);
 $background-l:rgba(255,255,255,0.95);
-$background-l-contrast:rgba(0,0,0,0.05);
+$background-l-contrast:rgb(235, 235, 235);
 
 
 $font-size-1:36px;
@@ -21,147 +21,226 @@ $font-size-7:12px;
 
 
 
-
 .account-container{
-    padding:80px 10px 50px 10px;
+    padding:100px 10px 50px 10px;
 
     h1{
-        color:$heading-color-l;
-        font-family: $heading-font;
         text-align: center;
-        padding:50px 10px;
+        font-family: $heading-font;
+        color: $heading-color-l;
     }
 
-    .account{
-        text-align: center;
+    .user{
+        padding:20px 0px;
         .image{
             text-align: center;
+            margin:20px 0px;
             img{
                 width:200px;
                 border-radius: 50%;
-            }
-        }
-        .name{
-            text-align: center;
-            h2{
-                font-family: $heading-font;
-                color:$content-color-l;
+                padding:10px;
+                background-color: $background-l-contrast;
             }
         }
 
-        .details{
-            padding:20px 0px;
-            // text-align: center;
-            p{
+        .name{
+            h2{
+                text-align: center;
                 font-family: $heading-font;
-                color:$content-color-l;
-                span{
-                    font-family: $content-font;
+                color: $heading-color-l;
+            }
+            p{
+                padding:0px 0px 0px 0px;
+                color: $content-color-l;
+                text-align: center;
+                font-family: $content-font;
+                font-size: $font-size-5;
+            }
+
+            h3{
+                padding:0px 0px 5px 0px;
+                color: $heading-color-l;
+                text-align: center;
+                font-family: $content-font;
+                font-weight: lighter;
+            }
+        }
+
+        .personal-details-container{
+            padding:20px 500px;
+            @media screen and (max-width:1300px)
+            {
+                padding:20px 400px;
+            }
+            @media screen and (max-width:1200px)
+            {
+                padding:20px 300px;
+            }
+            @media screen and (max-width:960px)
+            {
+                padding:20px 200px;
+            }
+            @media screen and (max-width:750px)
+            {
+                padding:20px 150px;
+            }
+            @media screen and (max-width:650px)
+            {
+                padding:20px 100px;
+            }
+            @media screen and (max-width:550px)
+            {
+                padding:20px 50px;
+            }
+            @media screen and (max-width:450px)
+            {
+                padding:10px 10px;
+            }
+            .personal-details{
+                padding:10px;
+                .content{
+                    border-bottom: 1px solid $heading-color-l;
+                    display: flex;
+                    justify-content: space-between;
+                    h3{
+                        flex: 1;
+                        padding:5px 10px;
+                        margin:5px 0px;
+                        color: $content-color-l;
+                        font-family: $content-font;
+                    }
+                    .title{
+                        color: $heading-color-l;
+                    }
+                    .value{
+                        text-align: right;
+                    }
+                }
+
+                .winning-streak{
+                    .value{
+                        background: linear-gradient(to right, rgba(226,226,226,1) 0%, rgba(226,226,226,1) 2%, rgba(219,219,219,1) 51%, rgba(209,209,209,1) 100%);
+                        border: 0.5px solid $content-color-l-xl;
+                        border-radius: 50px;
+                        font-weight: lighter;
+                        color:black;
+                        background-size: 89%;
+                        background-repeat: no-repeat;
+                        @media screen and (max-width:350px)
+                        {
+                            line-height: 40px;
+                        }
+                    }
                 }
             }
         }
 
         .buttons{
-            padding:20px 0px;
-            button{
-                padding:5px 10px;
-                margin:5px;
+            text-align: center;
+            margin:20px 0px;
+
+            a{
+                padding:5px 20px;
+                margin:3px;
+                border: 1px solid $heading-color-l;
+                border-radius: 3px;
+                text-decoration: none;
+                color:$content-color-l-contrast;
                 background-color: $heading-color-l;
                 font-family: $content-font;
-                border:1px solid $heading-color-l;
-                border-radius: 3px;
-                color:whitesmoke;
-                transition: background-color 0.4s;
-                outline: none;
-                &:active{
-                    transition: background-color 0.2s;
-                    background-color: white;
-                    color:$heading-color-l;
-                    cursor: pointer;
-                }
+                transition: background-color 0.2s;
                 &:hover{
                     cursor: pointer;
                 }
-            }
-
-
-        }
-
-    }
-
-    .password-setting{
-        display:none;
-        text-align: center;
-        padding:20px;
-        form{
-            input{
-                font-family: $content-font;
-                border:none;
-                border-bottom:1px solid $heading-color-l;
-                outline:none;
-                margin-bottom: 5px;
-                padding:5px;
-            }
-
-            button{
-                padding:5px 10px;
-                margin:5px;
-                background-color: $heading-color-l;
-                font-family: $content-font;
-                border:1px solid $heading-color-l;
-                border-radius: 3px;
-                color:whitesmoke;
-                transition: background-color 0.4s;
-                outline: none;
                 &:active{
-                    transition: background-color 0.2s;
-                    background-color: white;
                     color:$heading-color-l;
+                    background-color: whitesmoke;
+                    transition: background-color 0.2s;
                 }
-                &:hover{
-                    cursor: pointer;
+            }
+        }
+
+        .change-message{
+            padding:10px 0px;
+            text-align: center;
+
+            .login-message-success{
+                padding:10px;
+                margin:5px;
+                border: 1px solid green;
+                color:green;
+                font-family: $content-font;
+                border-radius: 5px;
+            }
+
+            .login-message-error{
+                padding:10px;
+                margin:5px;
+                border: 1px solid red;
+                color:red;
+                font-family: $content-font;
+                border-radius: 5px;
+            }
+        }
+
+        .setting-wrapper{
+            display: flex;
+            justify-content: center;
+            .settings{
+                position:fixed;
+                top:100px;
+                text-align: center;
+                padding:20px 10px;
+                margin:10vh 0;
+                background-color: $background-l-contrast;
+                border-radius: 10px;
+                h2{
+                    font-family: $heading-font;
+                    color: $heading-color-l;
+                }
+                p{
+                    font-family: $content-font;
+                    color: $content-color-l;
+                }
+    
+                form{
+                    padding:20px 0px;
+                    input{
+                        padding:5px 10px;
+                        margin:5px 0px;
+                        color:$content-color-l;
+                        font-family: $content-font;
+                        outline:none;
+                        border:0.5px solid $heading-color-l;
+                        width:300px;
+                        border-radius: 3px;
+    
+                        @media screen and (max-width:350px)
+                        {
+                            width:250px;
+                        }
+                    }
+    
+                    button{
+                        padding:5px 30px;
+                        margin-top:5px;
+                        outline: none;
+                        border:1px solid $heading-color-l;
+                        border-radius: 3px;
+                        color:whitesmoke;
+                        background-color: $heading-color-l;
+                        transition: background-color 0.2s;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                        &:active{
+                            background-color: whitesmoke;
+                            color:$heading-color-l;
+                            transition: background-color 0.2s;
+                        }
+                    }
                 }
             }
         }
     }
-
-    .misc{
-        @media screen and (max-width:600px){
-            padding:10px 50px;
-        }
-        @media screen and (max-width:500px){
-            padding:10px 10px;
-        }
-        padding:10px 100px;
-        display: flex;
-        justify-content: space-around;
-        a{
-            text-decoration: none;
-            font-family: $content-font;
-            color:$content-color-l;
-            margin:10px 10px;
-            &:hover{
-                color:$heading-color-l;
-            }
-        }
-    }
-}
-
-
-.login-message-success{
-    color:rgb(15, 184, 57);
-    border-radius: 4px;
-    border:1px solid rgb(15, 184, 57);
-    padding:10px;
-    font-family: $content-font;
-    margin:10px;
-}
-
-.login-message-error{
-    color:rgb(201, 14, 45);
-    border-radius: 4px;
-    border:1px solid rgb(201, 14, 45);
-    padding:10px;
-    font-family: $content-font;
-    margin:10px;
 }

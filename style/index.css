@@ -216,10 +216,11 @@ html {
 .login-container .login-div .login form input {
   padding: 5px;
   width: 300px;
-  margin: 5px 0px;
+  margin: 10px 0px;
   outline: none;
   border: none;
-  border-bottom: 1px solid #eb530d;
+  border-radius: 3px;
+  border: 1px solid #eb530d;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
