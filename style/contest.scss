@@ -25,6 +25,7 @@ $font-size-4:20px;
 $font-size-5:18px;
 $font-size-6:16px;
 $font-size-7:12px;
+$font-size-8:8px;
 
 
 html{
@@ -32,234 +33,65 @@ html{
 }
 
 
-// landing
-
-
-.landing{
-    padding:150px 10px 50px 10px;
-    @media screen and (max-width:600px){
-        padding:50px 10px 50px 10px;
-    }
-
-    .landing-wrapper{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        .purpose{
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            padding:10px;
-            margin:5px;
-            text-align: center;
-            .image{
-                img{
-                    width:300px;
-                }
-            }
-            .text{
-                h1{
-                    color: $heading-color-l;
-                    font-family: $heading-font;
-                    padding-bottom: 10px;
-                }
-
-                p{
-                    font-family: $content-font;
-                    color: $content-color-l;
-                    padding-bottom: 20px;
-                }
-
-                a{
-                    font-family: $content-font;
-                    text-decoration: none;
-                    padding:5px 10px;
-                    border:1px solid $heading-color-l;
-                    border-radius: 3px;
-                    background-color: $heading-color-l;
-                    color:whitesmoke;
-                    transition: background-color 0.2s;
-                    &:hover{
-                        color:$heading-color-l;
-                        background-color: white;
-                        transition: background-color 0.4s;
-                        cursor: pointer;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
 .topic-container{
-    padding: 150px 10px;
-    text-align: center;
+    padding:10px;
     h1{
+        padding:100px 0px 50px 0px;
+        text-align: center;
         font-family: $heading-font;
         color: $heading-color-l;
     }
 
-    .topic-wrapper{
-        padding:20px 0px;
-        display:flex;
-        justify-content:center;
+    .topic-list{
+        display: flex;
         flex-wrap: wrap;
-
+        justify-content: center;
         .topic{
-            transition: box-shadow 0.2s;
+
             &:hover{
-                -webkit-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
-                -moz-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
-                box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
+                -webkit-box-shadow: 5px 5px 34px -6px rgba(0,0,0,0.75);
+                -moz-box-shadow: 5px 5px 34px -6px rgba(0,0,0,0.75);
+                box-shadow: 5px 5px 34px -6px rgba(0,0,0,0.75);
                 transition: box-shadow 0.4s;
             }
+            
+            transition: box-shadow 0.2s;
+            border-radius: 10px;
+            padding: 10px;
+            margin:20px 10px;
             a{
                 text-decoration: none;
-                color:$content-color-l;
-            }
-            display:flex;
-            flex-direction: column;
-            justify-content: space-between;
-            margin:20px 10px;
-            padding:10px;
-            border: 1px solid $content-color-l-xxl;
-            border-radius:10px;
-            .image{
-                img{
-                    width:100px;
-                    background-color:$background-l-contrast;
-                    border-radius: 10px;
-                    padding:10px;
-                }
-            }
-            .text{
-                h3{
-                    font-family: $heading-font;
-                    color: $content-color-l;
-                    padding:5px;
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
-
-
-// contest
-
-
-.contest-section{
-    padding:80px 10px 50px 10px;
-    text-align: center;
-
-    h1{
-        font-family: $heading-font;
-        color: $heading-color-l;
-    }
-
-    .contest-wrapper{
-        padding:50px 0px 10px 0px;
-        display: flex;
-        justify-content:space-around;
-        flex-wrap: wrap;
-
-        .contest{
-            margin: 10px 0px 50px 0px;
-            padding-top:40px;
-            h2{
-                font-family: $heading-font;
-                color:$heading-color-l;
-                padding:50px 0px;
-            }
-
-            .contest-card{
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;        
-                padding:5px;
+                font-family: $content-font;
+                color: $content-color-l;
+                font-weight: lighter;
+                font-size: $font-size-7;
                 .content{
-                    background-color: rgba(255,255,255,0.8);
-                    transition: box-shadow 0.2s;
-                    &:hover{
-                        -webkit-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
-                        -moz-box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
-                        box-shadow: 6px 6px 55px 0px rgba(112,112,112,0.68);
-                        transition: box-shadow 0.4s;
-                    }
-                    border: 1px solid $content-color-l-xxl;
-                    padding:20px 10px;
-                    margin: 10px 5px;
-                    border-radius: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
+                    padding:5px;
                     .image{
-
+                        margin-bottom: 5px;
+                        text-align: center;
                         img{
+                            display: inline-block;
                             width:100px;
-                            padding:10px;
-                            border-radius: 10px;
-                            background-color:$background-l-contrast;
+                            padding:20px;
+                            border-radius: 50%;
+                            background-color: $background-l-contrast;
                         }
                     }
 
                     .text{
-                        h4{
-                            color:$heading-color-l;
-                            font-family: $heading-font;
-                            padding-bottom:5px;
-                        }
-                        h5{
-                            color:$content-color-l;
-                            font-family: $content-font;
-                        }
-
-                        .details{
-                            display: flex;
-                            justify-content: space-between;
-                            flex-wrap: wrap;
-                            font-family:$heading-font;
-                            color: $heading-color-l;
-                            padding:20px 5px 10px 5px;
-                            font-size:$font-size-4; 
-                        }
-                        .enter{
-                            padding-top:10px;
-                               a{
-                                   text-decoration: none;
-                                 font-family: $content-font;
-                                 padding:5px 10px;
-                                 border:1px solid $heading-color-l;
-                                 border-radius: 3px;
-                                 background-color: $heading-color-l;
-                                 color:whitesmoke;
-                                 transition: background-color 0.2s;
-                                 outline:none;
-                                 &:active{
-                                    color:$heading-color-l;
-                                    background-color: white;
-                                    transition: background-color 0.4s;
-                                 }
-
-                                 &:hover{
-                                    cursor: pointer;
-                                 }
-                            }
-                        }
-
+                        text-align: center;
                     }
                 }
             }
-
-
         }
     }
+
+
 }
+
+
+
 
 
 

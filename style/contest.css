@@ -8,196 +8,55 @@ html {
   scroll-behavior: smooth;
 }
 
-.landing {
-  padding: 150px 10px 50px 10px;
-}
-@media screen and (max-width: 600px) {
-  .landing {
-    padding: 50px 10px 50px 10px;
-  }
-}
-.landing .landing-wrapper {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.landing .landing-wrapper .purpose {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
-}
-.landing .landing-wrapper .purpose .image img {
-  width: 300px;
-}
-.landing .landing-wrapper .purpose .text h1 {
-  color: #eb530d;
-  font-family: "Montserrat", sans-serif;
-  padding-bottom: 10px;
-}
-.landing .landing-wrapper .purpose .text p {
-  font-family: "Roboto", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
-  padding-bottom: 20px;
-}
-.landing .landing-wrapper .purpose .text a {
-  font-family: "Roboto", sans-serif;
-  text-decoration: none;
-  padding: 5px 10px;
-  border: 1px solid #eb530d;
-  border-radius: 3px;
-  background-color: #eb530d;
-  color: whitesmoke;
-  transition: background-color 0.2s;
-}
-.landing .landing-wrapper .purpose .text a:hover {
-  color: #eb530d;
-  background-color: white;
-  transition: background-color 0.4s;
-  cursor: pointer;
-}
-
 .topic-container {
-  padding: 150px 10px;
-  text-align: center;
+  padding: 10px;
 }
 .topic-container h1 {
+  padding: 100px 0px 50px 0px;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   color: #eb530d;
 }
-.topic-container .topic-wrapper {
-  padding: 20px 0px;
+.topic-container .topic-list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
-.topic-container .topic-wrapper .topic {
+.topic-container .topic-list .topic {
   transition: box-shadow 0.2s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 20px 10px;
-  padding: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  padding: 10px;
+  margin: 20px 10px;
 }
-.topic-container .topic-wrapper .topic:hover {
-  -webkit-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
-  -moz-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
-  box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
+.topic-container .topic-list .topic:hover {
+  -webkit-box-shadow: 5px 5px 34px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 34px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 34px -6px rgba(0, 0, 0, 0.75);
   transition: box-shadow 0.4s;
 }
-.topic-container .topic-wrapper .topic a {
+.topic-container .topic-list .topic a {
   text-decoration: none;
+  font-family: "Roboto", sans-serif;
   color: rgba(0, 0, 0, 0.7);
+  font-weight: lighter;
+  font-size: 12px;
 }
-.topic-container .topic-wrapper .topic .image img {
-  width: 100px;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 10px;
-  padding: 10px;
-}
-.topic-container .topic-wrapper .topic .text h3 {
-  font-family: "Montserrat", sans-serif;
-  color: rgba(0, 0, 0, 0.7);
+.topic-container .topic-list .topic a .content {
   padding: 5px;
-  text-decoration: none;
 }
-
-.contest-section {
-  padding: 80px 10px 50px 10px;
+.topic-container .topic-list .topic a .content .image {
+  margin-bottom: 5px;
   text-align: center;
 }
-.contest-section h1 {
-  font-family: "Montserrat", sans-serif;
-  color: #eb530d;
-}
-.contest-section .contest-wrapper {
-  padding: 50px 0px 10px 0px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.contest-section .contest-wrapper .contest {
-  margin: 10px 0px 50px 0px;
-  padding-top: 40px;
-}
-.contest-section .contest-wrapper .contest h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #eb530d;
-  padding: 50px 0px;
-}
-.contest-section .contest-wrapper .contest .contest-card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 5px;
-}
-.contest-section .contest-wrapper .contest .contest-card .content {
-  background-color: rgba(255, 255, 255, 0.8);
-  transition: box-shadow 0.2s;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 20px 10px;
-  margin: 10px 5px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.contest-section .contest-wrapper .contest .contest-card .content:hover {
-  -webkit-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
-  -moz-box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
-  box-shadow: 6px 6px 55px 0px rgba(112, 112, 112, 0.68);
-  transition: box-shadow 0.4s;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .image img {
+.topic-container .topic-list .topic a .content .image img {
+  display: inline-block;
   width: 100px;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 20px;
+  border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.05);
 }
-.contest-section .contest-wrapper .contest .contest-card .content .text h4 {
-  color: #eb530d;
-  font-family: "Montserrat", sans-serif;
-  padding-bottom: 5px;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .text h5 {
-  color: rgba(0, 0, 0, 0.7);
-  font-family: "Roboto", sans-serif;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .text .details {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  font-family: "Montserrat", sans-serif;
-  color: #eb530d;
-  padding: 20px 5px 10px 5px;
-  font-size: 20px;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .text .enter {
-  padding-top: 10px;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .text .enter a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  padding: 5px 10px;
-  border: 1px solid #eb530d;
-  border-radius: 3px;
-  background-color: #eb530d;
-  color: whitesmoke;
-  transition: background-color 0.2s;
-  outline: none;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .text .enter a:active {
-  color: #eb530d;
-  background-color: white;
-  transition: background-color 0.4s;
-}
-.contest-section .contest-wrapper .contest .contest-card .content .text .enter a:hover {
-  cursor: pointer;
+.topic-container .topic-list .topic a .content .text {
+  text-align: center;
 }
 
 .organiser-section {
