@@ -92,7 +92,212 @@ html{
 
 
 
+// contests
 
+
+.available-contest-container{
+    padding:100px 10px;
+    h1{
+        text-align: center;
+        font-family: $heading-font;
+        color: $heading-color-l;
+        padding:50px 0px;
+    }
+
+    .available-topic-container{
+        h2{
+            text-align: center;
+            font-family: $heading-font;
+            color:$heading-color-l;
+            padding:20px 0px 30px 0px;
+        }
+
+        .contest-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .registered-contest{
+
+                &:hover{
+                    -webkit-box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+                    box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+                    transition: box-shadow 0.4s;
+                }
+
+                transition: box-shadow 0.2s;
+                border:1px solid $content-color-l-xxl;
+                border-radius: 10px;
+                margin:20px;
+
+                .contest-head{
+                    
+                    padding: 10px;
+                    display: flex;
+                    justify-content:center;
+                    .image{
+                        padding-right: 5px;
+                        img{
+                            width:100px;
+                            padding:20px;
+                            border-radius: 50%;
+                            background-color: $background-l-contrast;
+                        }
+                    }
+                    .heading{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        h2{
+                            font-family: $heading-font;
+                            color: $heading-color-l;
+                            text-align: left;
+                            font-size: $font-size-4;
+                            padding:2px;
+                            
+                        }
+                        h3{
+                            font-family: $content-font;
+                            color:$content-color-l;
+                            font-weight: lighter;
+                            font-size: $font-size-7;
+                            text-align: center;
+                        }
+                    }
+                }
+
+                .prize-detail{
+                    display: flex;
+                    justify-content: space-between;
+                    padding:10px 0px;
+
+                    .entry-fee{
+                        flex: 1;
+                        padding:10px;
+                        background-color: $heading-color-l;
+                        text-align: center;
+                        margin-right: 30px;
+                        border-radius: 0px 50px 50px 0px;
+                        h5{
+                            color:whitesmoke;
+                            font-weight: lighter;
+                            font-family: $content-font;
+                            font-size: $font-size-7;
+                        }
+
+                        h3{
+                            color:white;
+                            font-family: $heading-font;
+                            font-size: $font-size-6;
+                        }
+                    }
+
+                    .prize-ammount{
+                        flex:1;
+                        padding:10px;
+                        background-color: $heading-color-l;
+                        text-align: center;
+                        margin-left: 30px;
+                        border-radius: 50px 0px 0px 50px;
+                        h5{
+                            color:whitesmoke;
+                            font-weight: lighter;
+                            font-family: $content-font;
+                            font-size: $font-size-7;
+                        }
+
+                        h3{
+                            color:white;
+                            font-family: $heading-font;
+                            font-size: $font-size-6;
+                        }
+                    }
+                }
+
+                .details{
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    @media screen and (max-width:390px)
+                    {
+                        justify-content: center;
+                    }
+                    .opponent{
+                        text-align: center;
+                        padding: 10px;
+                        h5{
+                            font-weight: lighter;
+                            font-family: $content-font;
+                            color:$content-color-l;
+                            font-size: $font-size-7;
+                        }
+    
+                        .form{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: center;
+                           .input{
+                               margin:0px 5px;
+                            input{
+                                cursor: pointer;
+                            }
+    
+                            span{
+                                font-family: $heading-font;
+                                color:$heading-color-l;
+                                font-size: $font-size-6;
+                            }
+                           }
+                        }
+                    }
+
+                    .contest-type{
+                        text-align: center;
+                        padding: 10px;
+                        h5{
+                            font-weight: lighter;
+                            font-family: $content-font;
+                            color:$content-color-l;
+                            font-size: $font-size-7;
+                        }
+    
+                        h3{
+                            font-family: $heading-font;
+                            color:$heading-color-l;
+                            font-size: $font-size-6;
+                        }
+                    }
+                }
+
+                .start-match{
+                    padding:10px 0px;
+                    text-align: center;
+                    button{
+                        padding:5px 30px;
+                        outline:none;
+                        border:1px solid $heading-color-l;
+                        color:$heading-color-l;
+                        font-family: $content-font;
+                        background-color: white;
+                        border-radius: 5px;
+                        transition: background-color 0.3s;
+                        &:hover{
+                            cursor: pointer;
+                        }
+
+                        &:active{
+                            background-color: $heading-color-l;
+                            color:white;
+                            transition: background-color 0.3s;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
