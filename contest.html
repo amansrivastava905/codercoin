@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/contest.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/floatingEl.css">
     <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <!-- fonts 
@@ -20,7 +21,7 @@
 </head>
 
 <style>
-    #coverAll {
+    #coverAll, #coverAll3{
         width:100%;
         height:100%;
         opacity:.95;
@@ -36,6 +37,8 @@
 <body>
 
     <div id="coverAll" onclick="navigation()"></div>
+    <div id="coverAll3" onclick="showup()"></div>
+
 
      <!-- navbar -->
 
@@ -71,7 +74,31 @@
     </nav>
 
 
-    
+    <!-- floating section -->
+
+    <div class="floating-btn">
+        <div class="btn">
+            <i class="fas fa-chevron-circle-right"></i>
+        </div>
+    </div>
+
+    <div class="floating-container">
+        <div class="floating-box">
+            <div class="points">
+                <div class="circle">
+                    <h3>420</h3>
+                </div>
+                <h5>Wallet Points</h5>
+            </div>
+            <div class="redeem">
+                <button>Redeem Points</button>
+            </div>
+            <div class="contact">
+                <a href="#">Contact us</a>
+            </div>
+
+        </div>
+    </div>
 
 
    <!-- pick a topic -->
@@ -343,6 +370,7 @@
     <!-- script files -->
 
     <script src="script/nav.js"></script>
+    <script src="script/floatingEl.js"></script>
 </body>
 
 
