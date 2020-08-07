@@ -125,8 +125,10 @@ nav{
 @media screen and (max-width:700px)
 {
     nav{
+        z-index: 100000;
         
         .navbar{
+            z-index: 100000;
             padding:0px 10px;
             justify-content:space-between;
             .logo{
@@ -142,6 +144,7 @@ nav{
             }
 
             .nav{
+                z-index: 100000;
                 transition:left 0.5s cubic-bezier(0.75, 0.35, 0.46, 1);
                 position: absolute;
                 overflow-y:scroll;
