@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODERCOIN | datastructures</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../style/contest.css">
+    <link rel="stylesheet" href="../style/nav.css">
+    <link rel="stylesheet" href="../style/footer.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- fonts 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+</head>
+
+<style>
+    #coverAll {
+        width:100%;
+        height:100%;
+        opacity:.95;
+        top:0;
+        left:0;
+        display:none;
+        position:fixed;
+        background-color:rgba(0, 0, 0, 0.5);
+        overflow:auto
+	}
+</style>
+
+<body>
+
+    <div id="coverAll" onclick="navigation()"></div>
+
+     <!-- navbar -->
+
+     <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="../index.html"><img src="../image/codecoin-t.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                
+                <ul>
+                    <li class="nav-items"><a href="../contest.html"><i class="fas fa-code"></i> Contest</a></i></li>
+                    <li class="nav-items"><a href="../activity.html"> <i class="fas fa-award"></i> My activity</a></li>
+                    <li class="nav-items"><a href="../index.html#login"> <i class="far fa-user"></i> Login</a></li>
+                </ul>
+
+                <div class="nav-social">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="burger-menu">
+                <div class="burger">
+                    <i class="fa fa-bars fa-2x" id="burger"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+
+<!-- available contests topic wise -->
+
+   <!-- when user clicks any of this card, payment will be done and activity.html will be updated with a card for registered
+        contest. when user completes the match, only then points will be updated, and details will go to history, winning streak, 
+        matches played. 
+    -->
+
+
+
+    <div class="available-contest-container" id="all">
+        <h1>C LANGUAGE</h1>
+
+        <div class="available-topic-container" id="apti">
+            <h2>Available Contests</h2>
+            <div class="contest-container">
+                <div class="registered-contest">
+                    <div class="contest-head">
+                        <div class="image">
+                            <img src="../image/contest-maths.png" alt="aptitude">
+                        </div>
+                        <div class="heading">
+                            <h2>Aptitude</h2>
+                            <h3>#5949389fvjw8</h3>
+                        </div>
+                    </div>
+                    <div class="prize-detail">
+                        <div class="entry-fee">
+                            <h5>Entry</h5>
+                            <h3>5</h3>
+                        </div>
+                        <div class="prize-ammount">
+                            <h5>Prize</h5>
+                            <h3>8</h3>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="opponent">
+                            <h5> Select Opponent Type</h5>
+                            <div class="form">
+                                <input type="radio" name="opponent"> <span>Random</span>
+                                <input type="radio" name="opponent"> <span>invite</span>
+                            </div>
+                        </div>
+                        <div class="contest-type">
+                            <h5>Contest Type</h5>
+                            <h3>1-1</h3>
+                        </div>
+                    </div>
+                    <div class="start-match">
+                        <button>Register</button>
+                    </div>
+                </div>
+
+                <div class="registered-contest">
+                    <div class="contest-head">
+                        <div class="image">
+                            <img src="../image/contest-maths.png" alt="aptitude">
+                        </div>
+                        <div class="heading">
+                            <h2>Aptitude</h2>
+                            <h3>#5949389fvjw8</h3>
+                        </div>
+                    </div>
+                    <div class="prize-detail">
+                        <div class="entry-fee">
+                            <h5>Entry</h5>
+                            <h3>5</h3>
+                        </div>
+                        <div class="prize-ammount">
+                            <h5>Prize</h5>
+                            <h3>8</h3>
+                        </div>
+                    </div>
+                    <div class="details">
+                        <div class="opponent">
+                            <h5> Select Opponent Type</h5>
+                            <div class="form">
+                                <input type="radio" name="opponent"> <span>Random</span>
+                                <input type="radio" name="opponent"> <span>invite</span>
+                            </div>
+                        </div>
+                        <div class="contest-type">
+                            <h5>Contest Type</h5>
+                            <h3>Battleground</h3>
+                        </div>
+                    </div>
+                    <div class="start-match">
+                        <button>Register</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <!-- script files -->
+
+    <script src="script/nav.js"></script>
+</body>
+
+
+
+</html>

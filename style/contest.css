@@ -9,6 +9,7 @@ html {
 }
 
 .topic-container {
+  min-height: 100vh;
   padding: 10px;
 }
 .topic-container h1 {
@@ -169,7 +170,7 @@ html {
 }
 .available-contest-container .available-topic-container .contest-container .registered-contest .details {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-between;
 }
 @media screen and (max-width: 390px) {
@@ -188,17 +189,12 @@ html {
   font-size: 12px;
 }
 .available-contest-container .available-topic-container .contest-container .registered-contest .details .opponent .form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 0px 40px;
 }
-.available-contest-container .available-topic-container .contest-container .registered-contest .details .opponent .form .input {
-  margin: 0px 5px;
-}
-.available-contest-container .available-topic-container .contest-container .registered-contest .details .opponent .form .input input {
+.available-contest-container .available-topic-container .contest-container .registered-contest .details .opponent .form input {
   cursor: pointer;
 }
-.available-contest-container .available-topic-container .contest-container .registered-contest .details .opponent .form .input span {
+.available-contest-container .available-topic-container .contest-container .registered-contest .details .opponent .form span {
   font-family: "Montserrat", sans-serif;
   color: #eb530d;
   font-size: 16px;
@@ -243,7 +239,7 @@ html {
 
 .organiser-section {
   background-color: #eb530d;
-  padding: 50px 10px 100px 10px;
+  padding: 20px 10px 100px 10px;
   text-align: center;
 }
 .organiser-section h1 {

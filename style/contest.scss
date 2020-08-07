@@ -34,6 +34,7 @@ html{
 
 
 .topic-container{
+    min-height: 100vh;
     padding:10px;
     h1{
         padding:100px 0px 50px 0px;
@@ -216,7 +217,7 @@ html{
 
                 .details{
                     display: flex;
-                    flex-wrap: wrap;
+                    flex-direction: column;
                     justify-content: space-between;
 
                     @media screen and (max-width:390px)
@@ -234,11 +235,7 @@ html{
                         }
     
                         .form{
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                           .input{
-                               margin:0px 5px;
+                            padding:0px 40px;
                             input{
                                 cursor: pointer;
                             }
@@ -247,7 +244,6 @@ html{
                                 font-family: $heading-font;
                                 color:$heading-color-l;
                                 font-size: $font-size-6;
-                            }
                            }
                         }
                     }
@@ -305,7 +301,7 @@ html{
 
 .organiser-section{
     background-color:$heading-color-l;
-    padding:50px 10px 100px 10px;
+    padding:20px 10px 100px 10px;
     text-align: center;
     h1{
         font-family: $heading-font;

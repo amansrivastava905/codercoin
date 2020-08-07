@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+.result-wrapper {
+  padding: 10px 200px;
+}
+@media screen and (max-width: 900px) {
+  .result-wrapper {
+    padding: 10px 150px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .result-wrapper {
+    padding: 10px 100px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .result-wrapper {
+    padding: 10px 50px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .result-wrapper {
+    padding: 10px 10px;
+  }
+}
+.result-wrapper h1 {
+  padding: 100px 0px 10px 0px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+}
+.result-wrapper h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  background-color: #eb530d;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.result-wrapper .result {
+  padding: 0px 50px;
+}
+@media screen and (max-width: 1000px) {
+  .result-wrapper .result {
+    padding: 0px 0px;
+  }
+}
+.result-wrapper .result .header {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0px;
+}
+.result-wrapper .result .header .vs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 10px;
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+}
+.result-wrapper .result .header .player {
+  text-align: center;
+}
+.result-wrapper .result .header .player .image {
+  text-align: center;
+}
+.result-wrapper .result .header .player .image img {
+  display: inline-block;
+  width: 200px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+}
+@media screen and (max-width: 550px) {
+  .result-wrapper .result .header .player .image img {
+    width: 170px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .result-wrapper .result .header .player .image img {
+    width: 130px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .result-wrapper .result .header .player .image img {
+    width: 120px;
+  }
+}
+.result-wrapper .result .header .player .name h3 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+  background-color: transparent;
+  padding: 5px 10px;
+}
+.result-wrapper .result .header .player .points {
+  padding: 10px;
+  text-align: center;
+}
+.result-wrapper .result .header .player .points h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 3px;
+}
+.result-wrapper .result .header .player .answers {
+  padding: 10px;
+  text-align: center;
+}
+.result-wrapper .result .header .player .answers h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 3px;
+}
+.result-wrapper .result .header .player .answers h3 {
+  color: #eb530d;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 5px 10px;
+}
+.result-wrapper .details {
+  padding-bottom: 100px;
+}
+.result-wrapper .details h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #eb530d;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 5px;
+  margin-bottom: 20px;
+}
+.result-wrapper .details .solution {
+  transition: background-color 0.2s;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 100px;
+}
+.result-wrapper .details .solution:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s;
+}
+@media screen and (max-width: 740px) {
+  .result-wrapper .details .solution {
+    padding: 5px 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .result-wrapper .details .solution {
+    padding: 5px 0px;
+  }
+}
+.result-wrapper .details .solution .player-response {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.result-wrapper .details .solution .player-response i {
+  font-size: 20px;
+}
+.result-wrapper .details .solution .question {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+.result-wrapper .details .solution .question p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=result.css.map */
