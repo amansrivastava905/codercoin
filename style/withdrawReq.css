@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-image: url(../image/redeem-image.png);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: 500px;
+  background-repeat: no-repeat;
+}
+
+.redeem-container {
+  height: 100vh;
+  padding: 10px;
+}
+.redeem-container #message {
+  padding: 100px 0px 20px 0px;
+  color: #eb530d;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  font-size: 18px;
+}
+.redeem-container .point-detail {
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+.redeem-container .point-detail h5 {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  font-weight: lighter;
+}
+.redeem-container .point-detail h3 {
+  padding: 10px 40px;
+  -webkit-box-shadow: 9px 9px 49px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 9px 49px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 9px 49px -14px rgba(0, 0, 0, 0.75);
+  border: 2px solid #eb530d;
+  background-color: #eb530d;
+  display: inline-block;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50px;
+}
+.redeem-container .redeem-buttons {
+  text-align: center;
+  padding: 50px 0px 20px 0px;
+}
+.redeem-container .redeem-buttons button {
+  width: 200px;
+  color: #eb530d;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #eb530d;
+  outline: none;
+  transition: background-color 0.3s;
+}
+.redeem-container .redeem-buttons button:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+  transition: background-color 0.3s;
+}
+.redeem-container .redeem-buttons button:active {
+  background-color: #eb530d;
+  color: white;
+  transition: background-color 0.3s;
+}
+.redeem-container .redeem-form, .redeem-container .refill-form {
+  display: none;
+  transition: display 0.7s;
+  padding: 20px 10px;
+  margin: 20px 0px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+}
+.redeem-container .redeem-form p, .redeem-container .refill-form p {
+  color: #eb530d;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 20px;
+}
+.redeem-container .redeem-form input, .redeem-container .refill-form input {
+  text-align: center;
+  border: 1px solid #eb530d;
+  border-radius: 3px;
+  font-weight: lighter;
+  padding: 5px;
+  width: 300px;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 5px 0px;
+  outline: none;
+}
+@media screen and (max-width: 350px) {
+  .redeem-container .redeem-form input, .redeem-container .refill-form input {
+    width: 250px;
+  }
+}
+.redeem-container .redeem-form button, .redeem-container .refill-form button {
+  outline: none;
+  border: 1px solid #eb530d;
+  color: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  margin: 5px 0px 0px 0px;
+  padding: 5px 20px;
+  background-color: #eb530d;
+  border-radius: 3px;
+  transition: background-color 0.3s;
+}
+.redeem-container .redeem-form button:hover, .redeem-container .refill-form button:hover {
+  cursor: pointer;
+}
+.redeem-container .redeem-form button:active, .redeem-container .refill-form button:active {
+  color: #eb530d;
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+/*# sourceMappingURL=withdrawReq.css.map */

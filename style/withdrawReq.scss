@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin:0px;
+}
+
+// variables(always list them here)
+$heading-font:'Montserrat', sans-serif;
+$content-font:'Roboto', sans-serif;
+
+
+
+$content-color-l:rgba(0,0,0,0.7);
+$content-color-l-xl:rgba(0,0,0,0.5);
+$heading-color-l:rgb(235, 83, 13);
+$background-l:rgba(255,255,255,0.92);
+$background-l-contrast:rgba(255,255,255,0.9);
+
+
+$font-size-1:36px;
+$font-size-2:28px;
+$font-size-3:24px;
+$font-size-4:20px;
+$font-size-5:18px;
+$font-size-6:16px;
+$font-size-7:12px;
+
+body{
+    background-image: url(../image/redeem-image.png);
+    background-attachment: fixed;
+    background-position:bottom;
+    background-size:500px;
+    background-repeat: no-repeat;
+}
+.redeem-container{
+    height: 100vh;
+    padding:10px;
+    #message{
+        padding:100px 0px 20px 0px;
+        color:$heading-color-l;
+        font-family: $heading-font;
+        text-align: center;
+        font-size: $font-size-5;
+    }
+    .point-detail{
+        padding:0px 0px 20px 0px;
+        text-align: center;
+        h5{
+            font-family: $content-font;
+            color:$content-color-l;
+            padding:5px;
+            font-weight: lighter;
+        }
+        h3{
+            padding:10px 40px;
+            -webkit-box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+            -moz-box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+            box-shadow: 9px 9px 49px -14px rgba(0,0,0,0.75);
+            border:2px solid $heading-color-l;
+            background-color: $heading-color-l;
+            display: inline-block;
+            color:white;
+            font-family: $heading-font;
+            border-radius: 50px;
+        }
+    }
+
+    .redeem-buttons{
+        text-align: center;
+        padding:50px 0px 20px 0px;
+        button{
+            width:200px;
+            color:$heading-color-l;
+            font-family:$content-font;
+            font-size: $font-size-4;
+            padding:10px 20px;
+            margin:5px;
+            background-color: white;
+            border-radius: 5px;
+            border:1px solid $heading-color-l;
+            outline: none;
+            transition:background-color 0.3s;
+            &:hover{
+                cursor: pointer;
+                background-color: whitesmoke;
+                transition:background-color 0.3s;
+            }
+            &:active{
+                background-color: $heading-color-l;
+                color:white;
+                transition:background-color 0.3s;
+            }
+        }
+    }
+
+    .redeem-form, .refill-form{
+        display:none;
+        transition: display 0.7s;
+        padding:20px 10px;
+        margin:20px 0px;
+        text-align: center;
+        background-color: $background-l-contrast;
+        border-radius: 10px;
+        p{
+            color:$heading-color-l;
+            font-family: $content-font;
+            padding-bottom: 20px;
+        }
+
+        input{
+            text-align: center;
+            border:1px solid $heading-color-l;
+            border-radius: 3px;
+            font-weight: lighter;
+            padding:5px;
+            width:300px;
+            font-size: $font-size-5;
+            font-family: $content-font;
+            color:$content-color-l;
+            margin:5px 0px;
+            outline: none;
+
+            @media screen and (max-width:350px)
+            {
+                width:250px;
+            }
+        }
+
+        button{
+            outline: none;
+            border:1px solid $heading-color-l;
+            color:whitesmoke;
+            font-family:$content-font;
+            margin:5px 0px 0px 0px;
+            padding:5px 20px;
+            background-color: $heading-color-l;
+            border-radius: 3px;
+            transition: background-color 0.3s;
+            &:hover{
+                cursor: pointer;
+            }
+            &:active{
+                color:$heading-color-l;
+                background-color: white;
+                transition: background-color 0.3s;
+
+            }
+        }
+    }
+}
