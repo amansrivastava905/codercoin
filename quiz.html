@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODERCOIN | Quiz is Live</title>
+    <!-- style -->
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/quiz.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- fonts 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!-- favicon -->
+</head>
+
+<style>
+    #coverAll {
+        width:100%;
+        height:100%;
+        opacity:.95;
+        top:0;
+        left:0;
+        display:none;
+        position:fixed;
+        background-color:rgba(0, 0, 0, 0.5);
+        overflow:auto
+	}
+</style>
+
+<body>
+
+    <div id="coverAll" onclick="navigation()"></div>
+
+     <!-- navbar -->
+
+     <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="image/codecoin-t.png" alt="logo"></a>
+            </div>
+            <div class="nav">
+                
+                <ul>
+                    <li class="nav-items"><a href="contest.html"><i class="fas fa-code"></i> Contest</a></i></li>
+                    <li class="nav-items"><a href="activity.html"> <i class="fas fa-award"></i> My activity</a></li>
+                    <li class="nav-items"><a href="index.html#login"> <i class="far fa-user"></i> Login</a></li>
+                </ul>
+
+                <div class="nav-social">
+                    <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                </div>
+                
+            </div>
+
+            <div class="burger-menu">
+                <div class="burger">
+                    <i class="fa fa-bars fa-2x" id="burger"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- quiz container -->
+
+    <div class="quiz-container">
+        <h1>DATASTRUCTURES & ALGORITHMS</h1>
+        <div class="quiz-box">
+            <div class="question">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum labore, unde fugit inventore laboriosam
+                     necessitatibus aspernatur esse optio voluptatem similique repellat dolorum dolorem delectus totam fuga beatae
+                      quod animi eaque error? Ab voluptatum quaerat placeat eveniet? Velit laudantium 
+                    dicta possimus itaque asperiores accusamus aliquam minima eaque doloribus? Debitis, cumque provident
+                </p>
+               <div class="image">
+                    <img src="image/temp-quest-illus.png" alt="imp illustration related to question">
+               </div>
+            </div>
+            <div class="options">
+                <h2>Options</h2>
+                <div class="option-container">
+                    <div class="option">
+                        <input type="radio" name="option" id="1"> 
+                        <label for="1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident 
+                            consequatur illum optio perspiciatis dolorem odio. Autem iusto tempora labore odit.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="option" id="2"> 
+                        <label for="2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident 
+                            consequatur illum optio perspiciatis dolorem odio. Autem iusto tempora labore odit.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="option" id="3"> 
+                        <label for="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident 
+                            consequatur illum optio perspiciatis dolorem odio. Autem iusto tempora labore odit.</label>
+                    </div>
+                    <div class="option">
+                        <input type="radio" name="option" id="4"> 
+                        <label for="4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident 
+                            consequatur illum optio perspiciatis dolorem odio. Autem iusto tempora labore odit.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- script files -->
+
+    <script src="script/nav.js"></script>
+</body>
+
+
+
+</html>
