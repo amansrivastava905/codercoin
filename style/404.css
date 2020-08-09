@@ -4,6 +4,19 @@
   margin: 0px;
 }
 
+body {
+  min-height: 100vh;
+  background-image: url("../image/background.png");
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+@media screen and (max-width: 380px) {
+  body {
+    background-size: 300px;
+  }
+}
+
 .page {
   text-align: center;
   padding: 150px 20px;

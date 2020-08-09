@@ -32,6 +32,14 @@ html{
     scroll-behavior: smooth;
 }
 
+body{
+  min-height: 100vh;
+  background-image: url("../image/background2.png");
+  background-size:500px;
+  background-position:center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
 
 .topic-container{
     min-height: 100vh;

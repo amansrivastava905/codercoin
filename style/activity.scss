@@ -32,7 +32,14 @@ html{
     scroll-behavior: smooth;
 }
 
-
+body{
+    min-height: 100vh;
+    background-image: url("../image/background2.png");
+    background-size:500px;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
 
 .registered-activity-container{
     padding:10px;

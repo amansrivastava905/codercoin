@@ -28,6 +28,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 // landing section
 
 .landing-container{
@@ -223,6 +224,14 @@ html{
 // login page
 
 .login-container{
+    
+        min-height: 100vh;
+        background-image: url("../image/background2.png");
+        background-size:500px;
+        background-position:center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
     padding:150px 10px 50px 10px;
     text-align: center;
     h1{
