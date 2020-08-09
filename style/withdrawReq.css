@@ -20,6 +20,7 @@ body {
   background-position: bottom;
   background-size: 500px;
   background-repeat: no-repeat;
+  height: 100vh;
 }
 
 .redeem-container {
@@ -88,7 +89,7 @@ body {
   padding: 20px 10px;
   margin: 20px 0px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(231, 231, 231, 0.9);
   border-radius: 10px;
 }
 .redeem-container .redeem-form p, .redeem-container .refill-form p {
